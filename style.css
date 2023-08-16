@@ -1,0 +1,282 @@
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: orangered;
+    border-radius: 20px;
+}
+
+.logo img {}
+
+.nav-options {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-option {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#search-input {
+    padding: 5px;
+    border-radius: 7px;
+    border: 0;
+}
+
+/* first banner */
+
+.image-with-text {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 2% 0 0 0;
+}
+
+.image-with-text img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 8px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    padding: 20px;
+  
+
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 150px;
+    border: 3px solid orangered;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-options {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: salmon;
+        width: 100%;
+
+        text-align: center;
+        z-index: 1;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-options.active {
+        display: flex;
+    }
+}
+
+
+
+/*  */
+
+
+
+.parent-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(227, 224, 218);
+    border-radius: 10px;
+}
+
+.left-div,
+.right-div {
+    flex: 1;
+    padding: 20px;
+
+
+
+}
+
+.right-div {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .parent-div {
+        flex-direction: column;
+    }
+
+    .left-div,
+    .right-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 calc(25% - 30px);
+    /* Four cards side by side with spacing */
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 15px;
+    /* Add spacing between cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.card .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .rating span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #fbbf24;
+}
+
+.card .description {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 30px);
+        /* Two cards side by side with spacing */
+    }
+}
+
+
+
+/*  */
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 30px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fbbf24;
+  }
+
+  .address {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      flex: 0 0 100%;
+    }
+  }

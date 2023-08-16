@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fruit Selling House</title>
+</head>
+
+<body>
+
+  <!-- navbar section -->
+
+  <nav class="navbar">
+    <a href="" class="logo">
+      <img src="" alt="logo">
+    </a>
+
+    <div class="nav-options" id="navOptions">
+      <a href="" class="nav-option">Option1</a>
+      <a href="" class="nav-option">Option1</a>
+      <a href="" class="nav-option">Option1</a>
+      <a href="" class="nav-option">Option1</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      &#9776; <!-- Hamburger icon -->
+    </div>
+
+    <input type="search" name="" id="search-input" placeholder="search...">
+  </nav>
+
+
+  <!-- first banner section -->
+
+  <div class="image-with-text">
+    <img src="/images/banner1.jpg" alt="Image 1">
+    <div class="image-text">Welcome To Our Website</div>
+  </div>
+
+  <div class="image-grid">
+    <div class="grid-item">
+      <img src="/images/berry.jpg" alt="Image 2">
+      <div class="grid-item-name">Berry</div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/guava.jpg" alt="Image 3">
+      <div class="grid-item-name">Guava</div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/lichi.jpg" alt="Image 4">
+      <div class="grid-item-name">Litchi</div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/papaya.jpg" alt="Image 5">
+      <div class="grid-item-name">Papaya</div>
+    </div>
+  </div>
+
+
+
+  <!--  -->
+
+  <div class="container">
+    <div class="parent-div">
+      <div class="left-div">
+        <h1>Main Title</h1>
+        <p>Main Description</p>
+      </div>
+      <div class="right-div">
+
+        <div>
+          <h1 class="date">29 :</h1>
+          <p>Days</p>
+        </div>
+        <div>
+          <h1>15 :</h1>
+          <p>Hours</p>
+        </div>
+        <div>
+          <h1>25 :</h1>
+          <p>Minute</p>
+        </div>
+        <div>
+          <h1> 08</h1>
+          <p>Second</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--  -->
+
+  <div class="container">
+    <div class="card-container">
+      <div class="card">
+        <img src="/images/berry.jpg" alt="Card Image">
+        <p>100 BDT</p>
+        <h3>Berry</h3>
+        <div class="rating">
+          <span>Rating 5 Star</span>
+        </div>
+        <p class="description">Card Details</p>
+      </div>
+      <div class="card">
+        <img src="/images/guava.jpg" alt="Card Image">
+        <p>50 BDT</p>
+        <h3>Guava</h3>
+        <div class="rating">
+          <span>Rating 4.5 Star</span>
+        </div>
+        <p class="description">Card Details</p>
+      </div>
+      <div class="card">
+        <img src="/images/lichi.jpg" alt="Card Image">
+        <p>150 BDT</p>
+        <h3>Litchi</h3>
+        <div class="rating">
+          <span>Rating 4.8 Star</span>
+        </div>
+        <p class="description">Card Details</p>
+      </div>
+      <div class="card">
+        <img src="/images/papaya.jpg" alt="Card Image">
+        <p>40 BDT</p>
+        <h3>Papaya</h3>
+        <div class="rating">
+          <span>Rating 4.3 Star</span>
+        </div>
+        <p class="description">Card Details</p>
+      </div>
+      <!-- Repeat the card structure for other cards -->
+    </div>
+  </div>
+
+
+
+
+  <!--  -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="section">
+          <h4>Contact</h4>
+          <p><i class="icon fa fa-phone"></i> Phone: +123456789</p>
+          <p><i class="icon fa fa-envelope"></i> Email: info@example.com</p>
+        </div>
+        <div class="section">
+          <h4>About</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et felis nec leo placerat convallis.</p>
+        </div>
+        <div class="section">
+          <h4>Follow Us</h4>
+          <p><i class="icon fa fa-facebook"></i> Facebook</p>
+          <p><i class="icon fa fa-twitter"></i> Twitter</p>
+        </div>
+        <div class="section">
+          <h4>Address</h4>
+          <p class="address">1234 Street, City</p>
+          <p class="address">Country, ZIP Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navOptions = document.getElementById("navOptions");
+      navOptions.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
